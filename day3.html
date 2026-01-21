@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Image · Audio · Video Example</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 20px; line-height: 1.6; }
+    .media { margin-bottom: 24px; }
+    img { max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; }
+    audio, video { width: 100%; max-width: 720px; }
+    caption { font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Image · Audio · Video — Simple HTML</h1>
+
+  <!-- IMAGE -->
+  <div class="media">
+    <h2>Image</h2>
+    <!-- Remote placeholder image shown below. Replace src with your file path if needed. -->
+    <img src="rose1.jpeg" alt="Sample image">
+  </div>
+
+  <!-- AUDIO -->
+  <div class="media">
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="flower-stereoscope-80716.mp3" type="audio/mpeg">
+      <!-- Example external audio (uncomment if you want): -->
+      <!-- <source src="https://www.example.com/path/to/audio.mp3" type="audio/mpeg"> -->
+      Your browser does not support the audio element.
+    </audio>
+    <div><caption>Click play to hear the audio.</caption></div>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="media">
+    <h2>Video</h2>
+    <!-- Replace "your-video-file.mp4" with a local file or a URL to an mp4 -->
+    <video controls poster="iframe width="821 height="217" src="vdo.1.mp4" title="Blooming Rose Timelapse Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+      <source src="your-video-file.mp4" type="video/mp4">
+      <!-- Example public sample video (uncomment if you want): -->
+      <!-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
+      Your browser does not support the video element.
+    </video>
+    <div><caption>Controls let users play/pause, scrub, and change volume.</caption></div>
+  </div>
+</body>
+</html>
